@@ -1,0 +1,1 @@
+{"version":3,"file":"DeleteSeatArgs.js","sourceRoot":"","sources":["../../../src/seat/base/DeleteSeatArgs.ts"],"names":[],"mappings":";;;;;;;;;;;;AAWA,6CAAkD;AAClD,iEAA8D;AAG9D,IAAM,cAAc,GAApB,MAAM,cAAc;CAGnB,CAAA;AADC;IADC,eAAK,CAAC,GAAG,EAAE,CAAC,2CAAoB,EAAE,EAAE,QAAQ,EAAE,KAAK,EAAE,CAAC;8BAC/C,2CAAoB;6CAAC;AAFzB,cAAc;IADnB,kBAAQ,EAAE;GACL,cAAc,CAGnB;AAE0B,wCAAc"}

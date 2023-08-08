@@ -1,0 +1,182 @@
+[
+    {
+        "role": "user",
+        "resource": "User",
+        "action": "read:own",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "User",
+        "action": "create:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "User",
+        "action": "update:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "User",
+        "action": "delete:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "User",
+        "action": "read:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Ticket",
+        "action": "read:own",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Ticket",
+        "action": "create:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Ticket",
+        "action": "update:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Ticket",
+        "action": "delete:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Ticket",
+        "action": "read:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Travel",
+        "action": "read:own",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Travel",
+        "action": "create:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Travel",
+        "action": "update:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Travel",
+        "action": "delete:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Travel",
+        "action": "read:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Vehicle",
+        "action": "read:own",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Vehicle",
+        "action": "create:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Vehicle",
+        "action": "update:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Vehicle",
+        "action": "delete:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Vehicle",
+        "action": "read:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "UserTicket",
+        "action": "read:own",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "UserTicket",
+        "action": "create:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "UserTicket",
+        "action": "update:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "UserTicket",
+        "action": "delete:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "UserTicket",
+        "action": "read:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Seat",
+        "action": "read:own",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Seat",
+        "action": "create:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Seat",
+        "action": "update:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Seat",
+        "action": "delete:any",
+        "attributes": "*"
+    },
+    {
+        "role": "user",
+        "resource": "Seat",
+        "action": "read:any",
+        "attributes": "*"
+    }
+]

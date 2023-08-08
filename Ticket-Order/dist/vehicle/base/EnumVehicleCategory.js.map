@@ -1,0 +1,1 @@
+{"version":3,"file":"EnumVehicleCategory.js","sourceRoot":"","sources":["../../../src/vehicle/base/EnumVehicleCategory.ts"],"names":[],"mappings":";;;AAWA,6CAAmD;AAEnD,IAAY,mBAIX;AAJD,WAAY,mBAAmB;IAC7B,kCAAW,CAAA;IACX,sCAAe,CAAA;IACf,8CAAuB,CAAA;AACzB,CAAC,EAJW,mBAAmB,GAAnB,2BAAmB,KAAnB,2BAAmB,QAI9B;AAED,0BAAgB,CAAC,mBAAmB,EAAE;IACpC,IAAI,EAAE,qBAAqB;CAC5B,CAAC,CAAC"}

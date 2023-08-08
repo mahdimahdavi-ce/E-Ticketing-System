@@ -1,0 +1,124 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Ticket {
+  createdAt   DateTime         @default(now())
+  firstName   String
+  gender      EnumTicketGender
+  id          String           @id @default(cuid())
+  lastName    String
+  nationalId  String
+  phoneNumber String?
+  seatNumber  Float
+  travelId    Travel?          @relation(fields: [travelIdId], references: [id])
+  travelIdId  String?
+  updatedAt   DateTime?        @updatedAt
+  userId      UserTicket?
+  vehicleId   Float
+}
+
+model Travel {
+  basePrice   Float
+  category    EnumTravelCategory?
+  createdAt   DateTime            @default(now())
+  date        DateTime
+  destination String
+  discount    String?
+  id          String              @id @default(cuid())
+  source      String
+  ticketId    Ticket[]
+  updatedAt   DateTime            @updatedAt
+  vehicleId   Vehicle?            @relation(fields: [vehicleIdId], references: [id])
+  vehicleIdId String?
+}
+
+model Vehicle {
+  category        EnumVehicleCategory?
+  color           String?
+  corporation     String?
+  createdAt       DateTime             @default(now())
+  id              String               @id @default(cuid())
+  numberOfSeats   Float?
+  numberPlate     String?
+  ownerNationalId String?
+  seats           Seat[]
+  travelId        Travel[]
+  updatedAt       DateTime             @updatedAt
+}
+
+model UserTicket {
+  createdAt  DateTime @default(now())
+  id         String   @id @default(cuid())
+  isCanceled Boolean?
+  ticketId   Ticket?  @relation(fields: [ticketIdId], references: [id])
+  ticketIdId String?  @unique
+  updatedAt  DateTime @updatedAt
+  userId     String?
+}
+
+model Seat {
+  createdAt   DateTime @default(now())
+  id          String   @id @default(cuid())
+  isReserved  Boolean?
+  seatNumber  Float?
+  updatedAt   DateTime @updatedAt
+  vehicleId   Vehicle? @relation(fields: [vehicleIdId], references: [id])
+  vehicleIdId String?
+}
+
+model Dicount {
+  createdAt          DateTime       @default(now())
+  description        String?
+  discountCode       String?
+  discountName       String?
+  discountPercentage Float?
+  endDate            DateTime?
+  id                 String         @id @default(cuid())
+  startDate          DateTime?
+  updatedAt          DateTime       @updatedAt
+  userIds            UserDiscount[]
+}
+
+model UserDiscount {
+  createdAt  DateTime  @default(now())
+  discountId Dicount[]
+  id         String    @id @default(cuid())
+  isExpired  Boolean?
+  isUsed     Boolean?
+  updatedAt  DateTime  @updatedAt
+  userId     String?
+}
+
+enum EnumTicketGender {
+  Male
+  Female
+}
+
+enum EnumTravelCategory {
+  Bus
+  Train
+  Airplane
+}
+
+enum EnumVehicleCategory {
+  Bus
+  Train
+  Airplaine
+}
